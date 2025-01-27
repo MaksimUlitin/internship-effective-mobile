@@ -281,8 +281,6 @@ func GetSongText(c *gin.Context) {
 	c.JSON(http.StatusOK, resp)
 }
 
-// SongUpdateRequest структура для обновления песни
-
 func UpdateSong(c *gin.Context) {
 	id := c.Param("id")
 	var updateData models.SongUpdateRequest
