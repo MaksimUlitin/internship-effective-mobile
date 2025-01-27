@@ -24,3 +24,11 @@ type AddNewSong struct {
 	Group string `json:"group"`
 	Song  string `json:"song"`
 }
+
+type SongUpdateRequest struct {
+	GroupID     *int    `json:"group_id"`
+	Title       *string `json:"title"`
+	ReleaseDate *string `json:"release_date"`
+	Lyrics      *string `json:"lyrics"`
+	Link        *string `json:"link"`
+}

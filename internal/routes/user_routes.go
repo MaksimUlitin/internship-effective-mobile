@@ -10,7 +10,7 @@ func Router() *gin.Engine {
 	r.POST("/info", controllers.AddSongInfo)
 	r.GET("/songs", controllers.GetSongs)
 	r.GET("/songs/:id/text", controllers.GetSongText)
-	r.PUT("/songs/:id", controllers.UpdateSong)
+	r.PATCH("/songs/:id", controllers.UpdateSong)
 	r.DELETE("/songs/:id", controllers.DeleteSong)
 
 	return r
